@@ -1,0 +1,31 @@
+@import "_minix.scss";
+@import "common.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+}
+
+header {
+    width: 100%;
+    height: pxTorem(44px);
+    background: green;
+    @include box_flex;
+    font-size: pxTorem(18px);
+}
+
+section {
+    width: 100%;
+    @include flex;
+    @include box_flex;
+    background: skyblue;
+    @include direction(column);
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(50px);
+    background: #eee;
+    @include box_flex;
+}
