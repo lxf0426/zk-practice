@@ -181,12 +181,36 @@ html {
 header {
   width: 100%;
   height: 1.17333rem;
-  background: green;
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
   display: -webkit-flex;
   /* NEW - Chrome */
-  font-size: 0.48rem; }
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  line-height: 1.17333rem;
+  font-size: 0.48rem;
+  background: #02c0b6;
+  color: white; }
+  header p i.icon,
+  header dl i.icon {
+    font-size: 0.48rem; }
+  header p.serch {
+    width: 70%;
+    height: 0.74667rem;
+    line-height: 0.72rem;
+    padding: 0 0.26667rem;
+    margin-top: 0.21333rem;
+    border: 1px solid #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.2); }
+    header p.serch input {
+      width: 90%;
+      height: 100%;
+      border: none; }
 
 section {
   width: 100%;
@@ -196,13 +220,35 @@ section {
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
   display: -webkit-flex;
   /* NEW - Chrome */
-  background: skyblue;
   -webkit-flex-direction: column;
   flex-direction: column; }
+  section .swiper-container {
+    width: 100%;
+    margin-top: 0.4rem;
+    height: 3.73333rem; }
+    section .swiper-container .swiper-slide {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      flex-wrap: wrap; }
+      section .swiper-container .swiper-slide dl {
+        width: 20%;
+        height: 1.6rem;
+        text-align: center; }
+        section .swiper-container .swiper-slide dl dt {
+          width: 1.17333rem;
+          height: 70%;
+          margin: 0 auto; }
+          section .swiper-container .swiper-slide dl dt img {
+            width: 100%;
+            height: 100%; }
 
 footer {
   width: 100%;
-  height: 1.33333rem;
+  height: 1.17333rem;
   background: #eee;
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */

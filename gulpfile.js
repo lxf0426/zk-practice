@@ -2,7 +2,7 @@
  * @Author: Lxf 
  * @Date: 2018-12-01 09:34:37 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-12-01 09:58:44
+ * @Last Modified time: 2018-12-01 11:00:29
  */
 
 var gulp = require('gulp');
@@ -19,7 +19,7 @@ var concat = require('gulp-concat');
 
 var server = require('gulp-webserver');
 
-var data = require('./src/data/user.json')
+var swiper = require('./src/data/swiper.json')
 
 var fs = require('fs');
 
@@ -51,7 +51,7 @@ gulp.task('server', function() {
                 }
 
                 if (pathname === '/api/list') {
-                    res.end(JSON.stringify({ code: 0, msg: data }))
+                    res.end(JSON.stringify({ code: 0, msg: swiper }))
                 } else {
                     pathname = pathname === '/' ? 'index.html' : pathname;
                     res.end(fs.readFileSync(path.join(__dirname, 'src', pathname)))
